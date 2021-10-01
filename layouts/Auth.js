@@ -5,6 +5,10 @@ import { Container, Row, Col } from "reactstrap";
 // core components
 import AuthNavbar from "components/Navbars/AuthNavbar.js";
 import AuthFooter from "components/Footers/AuthFooter.js";
+import Paquetes from "components/fcolibri/Paquetes.js";
+import Banner from "components/fcolibri/Banner.js";
+import Testimonios from "components/fcolibri/Testimonios.js";
+
 
 import routes from "routes.js";
 
@@ -24,12 +28,14 @@ function Auth(props) {
           <Container>
             <div className="header-body text-center mb-7">
               <Row className="justify-content-center">
-                <Col lg="5" md="6">
-                  <h1 className="text-white">Welcome!</h1>
-                  <p className="text-lead text-light">
-                    Use these awesome forms to login or create new account in
-                    your project for free.
-                  </p>
+                <Col lg="12" md="6">
+                  <h1 className="text-white">PLANES DE FACTURACION!</h1>
+                  <Paquetes />
+                  <Banner />
+                  <Testimonios />
+
+
+
                 </Col>
               </Row>
             </div>
@@ -52,7 +58,10 @@ function Auth(props) {
         </div>
         {/* Page content */}
         <Container className="mt--8 pb-5">
-          <Row className="justify-content-center">{props.children}</Row>
+          <Row className="justify-content-center">
+            {/* aqui pueden ir mas componentes */}
+            <br/><br/>
+          </Row>
         </Container>
       </div>
       <AuthFooter />

@@ -11,28 +11,27 @@ function UserHeader() {
         style={{
           minHeight: "600px",
           backgroundImage:
-            "url(" + require("assets/img/theme/profile-cover.jpg") + ")",
+            "url(" + require("assets/img/theme/laptop.png") + ")",
           backgroundSize: "cover",
           backgroundPosition: "center top",
         }}
       >
         {/* Mask */}
-        <span className="mask bg-gradient-default opacity-8" />
+
         {/* Header container */}
         <Container className="d-flex align-items-center" fluid>
           <Row>
             <Col lg="7" md="10">
-              <h1 className="display-2 text-white">Hello Jesse</h1>
+              <h2 className="display-2 text-white">Software de facturación Fácil y Económico</h2>
               <p className="text-white mt-0 mb-5">
-                This is your profile page. You can see the progress you've made
-                with your work and manage your projects or assigned tasks
+                Concéntrese en su trabajo y permítanos ayudarlo a asegurarnos de que su arduo trabajo sea potenciado y recompensado
               </p>
               <Button
-                color="info"
-                href="#pablo"
+                color="warning"
+                href="#"
                 onClick={(e) => e.preventDefault()}
               >
-                Edit profile
+                Empiece Ahora
               </Button>
             </Col>
           </Row>
